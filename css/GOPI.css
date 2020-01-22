@@ -1,0 +1,170 @@
+
+.col-mar
+{
+ margin-bottom: 100px;
+ margin-top: 50px;
+}
+
+
+.img-c
+{
+ width:40%;
+ margin: auto;
+ transition: 2S;
+}
+.img-c:hover
+{
+    transform: rotatey(369deg);
+}
+.text-s
+{
+ font-size: 30px;
+ font-family: sans-serif;
+}
+.text-p-s
+{
+ font-size: 20px;
+ line-height: 1.5;
+ letter-spacing: 1px;
+ word-spacing: 1px;
+ margin-bottom:30px;
+ color:#31708f;
+ font-weight: 500;
+}
+.mar
+{
+ margin:20px auto;
+ width:50%;
+
+}
+.mar1
+{
+ margin:20px auto;
+ width:61%;
+
+}
+.mar2
+{
+ margin:20px auto;
+ width:20%;
+
+}
+.mar3
+{
+ margin:20px auto;
+ width:25%;
+
+}
+.text-l
+{
+ font-size: 18px !important;
+ font-weight: 600;
+ letter-spacing: 1px;
+ word-spacing: 1px;
+ font-family: monospace;
+}
+.text-ll
+{
+ font-size: 20px !important;
+ font-weight: 800;
+ letter-spacing: 1px;
+ word-spacing: 1px;
+ font-family: monospace;
+}
+#a,#b,#c,#d,#e,#f,#g,#h,#j,#k,#l,#m,#n,#o,#p,#q,#r,#s,#a1,#a2,#b1,#b2,#c1,#c2,#d1,#d2,#e1,#e2,#e3,#f1,#f2,#f3,#g1,#g2,#h1,#h2,#j1,#j2,#k1,#k2,#l1,#l2
+{
+ width: 50%;
+ border-radius: 7px;
+ border-color: #31708f;
+ border-style:solid ;
+ font-size: 18px;
+ padding: 3px 10px;
+ color:#31708f;
+ font-weight: 600;
+ letter-spacing: 1px;
+ word-spacing: 1px;
+ font-family: monospace;
+}
+.b-s
+{
+ font-size: 18px;
+ font-weight: 600;
+ font-family: monospace;
+ letter-spacing: 1px;
+ background-color: #d4d4d4;
+ border-radius: 25px;
+ border-color: #31708f;
+ border-style:solid ;
+ color:#31708f;
+ padding: 3px 10px;
+ margin: 5px;
+}
+.b-s:hover
+{
+ background-color:#31708f;
+ color: black;
+ border-color:black;
+
+}
+
+.border
+{
+ border:2px solid #31708f;
+ padding: 30px 0px ;
+ margin:50px auto;
+ border-radius: 7px;
+}
+#para,#para1,#para2,#para3,#para4,#para5,#para6,#para7,#para8,#para9,#para10,#para11,#para12,#para13,#para14,#para15,#para16,#para17,#para18,#para19,#para20,#para21
+{
+ text-align: center;
+ color:#31708f;
+ font-size: 18px !important;
+ font-weight: 600;
+ letter-spacing: 1px;
+ word-spacing: 1px;
+ font-family: monospace;
+
+}
+
+.text-pp
+{
+text-align: center;
+
+font-size: 20px;
+font-weight: 600;
+font-family: monospace;
+letter-spacing: 1px;
+
+transition: 2s;
+
+}
+#ic
+{
+transition: 2s;
+color:gold;
+}
+
+.text-pp:hover
+{
+font-size: 25px;
+color:white;
+}
+footer{
+background-color: black;
+height: 60px;
+padding: 20px;
+margin: 0px !important;
+
+}
+#ico
+{
+font-size: 40px;
+position: fixed;
+right:40px;
+bottom:80px;
+color:#31708f
+}
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px ! important;
+}

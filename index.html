@@ -1,0 +1,707 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="JavaScript basic - Exercises, Practice, Solution ">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="RK~Gopi">
+        <title>JavaScript</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="css/GOPI.css">
+    </head>
+    <body>
+      <div class="container" id="up">
+        <!--heading-->
+       <div class="row">
+           <div class="col-xs-12 col-mar">
+              <img src="images/javascript_logo3.png" alt="javascript-logo" class="img-responsive img-c">
+
+              <p class="text-center text-info text-s">JavaScript basic - Exercises Questions</i></p>
+           </div>
+       </div>
+       <!--1-->
+       <div class="row">
+           <div class="col-xs-12 ">
+              <p class="text-left  text-p-s">1) Write a JavaScript program to calculate Addition,Subtraction,    multiplication and division of two numbers (input from user).</p>
+
+              <div class="border">
+                  <p class="text-center text-info text-ll"><i class="fa fa-calculator" aria-hidden="true"></i> Calculator</p>
+              <div class="form-group mar">
+                    <label for="f1" class="text-info text-l">Enter The First Value : </label>
+                    <input type="text"  id="f1"  value="">
+              </div>
+              <div class="form-group mar">
+                    <label for="f2" class="text-info text-l">Enter The Second Value: </label>
+                    <input type="text"  id="f2"  value="">
+              </div>
+              <div class="form-group mar1">
+                  <button class="b-s" onclick="addition()">Addition</button>
+                  <button class="b-s" onclick="subtraction()">Subtraction</button>
+                  <button class="b-s" onclick="multiplication()">Multiplication</button>
+                  <button class="b-s" onclick="division()">Division</button>
+                  <button class="b-s" onclick="reset()">Reset</button>
+              </div>
+              <div class="p-bor mar">
+                  <p id="para"></p>
+              </div>
+            </div>
+       </div>
+       </div>
+       <!--2-->
+       <div class="row">
+        <div class="col-xs-12 ">
+           <p class="text-left  text-p-s">2) Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.  </p>
+
+           <div class="border">
+           <div class="form-group mar">
+                 <label for="a1" class="text-info text-l">Give   Value : </label>
+                 <input type="text"  id="a1"  value="13">
+           </div>
+           <div class="form-group mar">
+                 <label for="a2" class="text-info text-l">Enter Value: </label>
+                 <input type="text"  id="a2"  value="">
+           </div>
+           <div class="form-group mar2">
+               <button class="b-s" onclick="diff()">Result</button>
+               <button class="b-s" onclick="reset1()">Reset</button>
+           </div>
+           <div class="p-bor mar">
+               <p id="para2"></p>
+           </div>
+         </div>
+    </div>
+       </div>
+       <!--3-->
+       <div class="row">
+        <div class="col-xs-12 ">
+           <p class="text-left  text-p-s">3) Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.   </p>
+
+           <div class="border">
+           <div class="form-group mar">
+                 <label for="b1" class="text-info text-l">Enter The First Value : </label>
+                 <input type="text"  id="b1"  value="">
+           </div>
+           <div class="form-group mar">
+                 <label for="b2" class="text-info text-l">Enter The Second Value: </label>
+                 <input type="text"  id="b2"  value="">
+           </div>
+           <div class="form-group mar2">
+               <button class="b-s" onclick="sum()">Result</button>
+               <button class="b-s" onclick="reset2()">Reset</button>
+           </div>
+           <div class="p-bor mar">
+               <p id="para3"></p>
+           </div>
+         </div>
+    </div>
+       </div>
+       <!--4-->
+       <div class="row">
+        <div class="col-xs-12 ">
+           <p class="text-left  text-p-s">4) Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.   </p>
+
+           <div class="border">
+           <div class="form-group mar">
+                 <label for="c1" class="text-info text-l">Give   Value : </label>
+                 <input type="text"  id="c1"  value="19">
+           </div>
+           <div class="form-group mar">
+                 <label for="c2" class="text-info text-l">Enter  Value: </label>
+                 <input type="text"  id="c2"  value="">
+           </div>
+           <div class="form-group mar2">
+               <button class="b-s" onclick="sub()">Result</button>
+               <button class="b-s" onclick="reset3()">Reset</button>
+           </div>
+           <div class="p-bor mar">
+               <p id="para1"></p>
+           </div>
+         </div>
+        </div>
+        </div>
+        <!--5-->
+        <div class="row">
+        <div class="col-xs-12 ">
+           <p class="text-left  text-p-s">5) Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.  </p>
+
+           <div class="border">
+           <div class="form-group mar">
+                 <label for="d1" class="text-info text-l">Enter First  Value : </label>
+                 <input type="text"  id="d1"  value="">
+           </div>
+           <div class="form-group mar">
+                 <label for="d2" class="text-info text-l">Enter Second Value: </label>
+                 <input type="text"  id="d2"  value="">
+           </div>
+           <div class="form-group mar2">
+               <button class="b-s" onclick="trueorfalse()">Result</button>
+               <button class="b-s" onclick="reset4()">Reset</button>
+           </div>
+         </div>
+        </div>
+        </div>
+        <!--6-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">6)  Write a JavaScript program to check from two given integers, if one is positive and one is negative.  </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="a" class="text-info text-l">Enter First  Value : </label>
+                     <input type="text"  id="a"  value="">
+               </div>
+               <div class="form-group mar">
+                     <label for="b" class="text-info text-l">Enter Second Value: </label>
+                     <input type="text"  id="b"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="positive_negative()">Result</button>
+                   <button class="b-s" onclick="reset5()">Reset</button>
+               </div>
+             </div>
+            </div>
+        </div>
+        <!--7-->
+        <div class="row">
+                <div class="col-xs-12 ">
+                   <p class="text-left  text-p-s">7) Write a JavaScript program check if a given positive number is a multiple of 3 or a multiple of 7.   </p>
+        
+                   <div class="border">
+                   <div class="form-group mar">
+                         <label for="c" class="text-info text-l">Enter the  Value : </label>
+                         <input type="text"  id="c"  value="">
+                   </div>
+                  
+                   <div class="form-group mar2">
+                       <button class="b-s" onclick="check37()">Result</button>
+                       <button class="b-s" onclick="reset6()">Reset</button>
+                   </div>
+                 </div>
+                </div>
+        </div>
+        <!--8-->
+        <div class="row">
+                <div class="col-xs-12 ">
+                   <p class="text-left  text-p-s">8) Write a JavaScript program to find the largest of three given integers.   </p>
+        
+                   <div class="border">
+                   <div class="form-group mar">
+                         <label for="e1" class="text-info text-l">Enter the First  Value : </label>
+                         <input type="text"  id="e1"  value="">
+                   </div>
+                   <div class="form-group mar">
+                        <label for="e2" class="text-info text-l">Enter the second  Value: </label>
+                        <input type="text"  id="e2"  value="">
+                  </div>
+                  <div class="form-group mar">
+                        <label for="e3" class="text-info text-l">Enter the thrid Value : </label>
+                        <input type="text"  id="e3"  value="">
+                  </div>
+                  
+                   <div class="form-group mar2">
+                       <button class="b-s" onclick="largest()">Find</button>
+                       <button class="b-s" onclick="reset7()">Reset</button>
+                   </div>
+                   <div class="p-bor mar">
+                        <p id="para4"></p>
+                    </div>
+                 </div>
+                </div>
+        </div>
+        <!--9-->
+        <div class="row">
+                <div class="col-xs-12 ">
+                   <p class="text-left  text-p-s">9) Write a JavaScript program to check from two given integers if either one is 8 or their sum or difference is 8.   </p>
+        
+                   <div class="border">
+                   <div class="form-group mar">
+                         <label for="g1" class="text-info text-l">Enter the First  Value : </label>
+                         <input type="text"  id="g1"  value="">
+                   </div>
+                   <div class="form-group mar">
+                        <label for="g2" class="text-info text-l">Enter the second  Value: </label>
+                        <input type="text"  id="g2"  value="">
+                  </div>
+                  
+                   <div class="form-group mar2">
+                       <button class="b-s" onclick="eight()">Result</button>
+                       <button class="b-s" onclick="reset8()">Reset</button>
+                   </div>
+                 </div>
+                </div>
+        </div>
+        <!--10-->
+        <div class="row">
+                <div class="col-xs-12 ">
+                   <p class="text-left  text-p-s">10) Write a JavaScript function that accepts a string as a counts the number of vowels within the string.   </p>
+        
+                   <div class="border">
+                   <div class="form-group mar">
+                         <label for="d" class="text-info text-l">Enter the word : </label>
+                         <input type="text"  id="d"  value="">
+                   </div>
+                   <div class="form-group mar2">
+                       <button class="b-s" onclick="vowels()">Count</button>
+                       <button class="b-s" onclick="reset9()">Reset</button>
+                   </div>
+                   <div class="p-bor mar">
+                        <p id="para5"></p>
+                    </div>
+                 </div>
+                </div>
+        </div>
+        <!--11-->
+        <div class="row">
+                <div class="col-xs-12 ">
+                   <p class="text-left  text-p-s">11) Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.   </p>
+        
+                   <div class="border">
+                   <div class="form-group mar">
+                         <label for="h1" class="text-info text-l">Given the word : </label>
+                         <input type="text"  id="h1"  value="Py">
+                   </div>
+                   <div class="form-group mar">
+                        <label for="h2" class="text-info text-l">Enter the word : </label>
+                        <input type="text"  id="h2"  value="">
+                  </div>
+                   <div class="form-group mar2">
+                       <button class="b-s" onclick="orignal()">Result</button>
+                       <button class="b-s" onclick="reset10()">Reset</button>
+                   </div>
+                   <div class="p-bor mar">
+                        <p id="para6"></p>
+                    </div>
+                 </div>
+                </div>
+        </div>
+        <!--12-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">12)Write a JavaScript program to remove a character at the specified position of a given string and return the new string.    </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="j1" class="text-info text-l">Enter the word : </label>
+                     <input type="text"  id="j1"  value="">
+               </div>
+               <div class="form-group mar">
+                    <label for="j2" class="text-info text-l">Enter  position : </label>
+                    <input type="text"  id="j2"  value="">
+              </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="premove()">Remove</button>
+                   <button class="b-s" onclick="reset11()">Reset</button>
+               </div>
+               <div class="p-bor mar">
+                    <p id="para7"></p>
+                </div>
+             </div>
+            </div>
+        </div>
+        <!--13-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">13) Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back.    </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="e" class="text-info text-l">Enter the word : </label>
+                     <input type="text"  id="e"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="firstend()">Result</button>
+                   <button class="b-s" onclick="reset12()">Reset</button>
+               </div>
+               <div class="p-bor mar">
+                    <p id="para8"></p>
+                </div>
+             </div>
+            </div>
+        </div>
+        <!--14-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">14) Write a JavaScript program to check if a string starts with 'Java' and false otherwise.    </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="f" class="text-info text-l">Enter the word : </label>
+                     <input type="text"  id="f"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="java()">Result</button>
+                   <button class="b-s" onclick="reset13()">Reset</button>
+               </div>
+             </div>
+            </div>
+        </div>
+        <!--15-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">15) Write a JavaScript program to reverse a given string.    </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="g" class="text-info text-l">Enter the word : </label>
+                     <input type="text"  id="g"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="reverse()">Reverse</button>
+                   <button class="b-s" onclick="reset14()">Reset</button>
+               </div>
+               <div class="p-bor mar">
+                <p id="para9"></p>
+            </div>
+             </div>
+            </div>
+        </div>
+        <!--16-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">16) Write a JavaScript program to capitalize the first letter of each word of a given string.    </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="h" class="text-info text-l">Enter the sentence : </label>
+                     <input type="text"  id="h"  value="">
+               </div>
+               <div class="form-group mar3">
+                   <button class="b-s" onclick="capitalize()">Capitalize</button>
+                   <button class="b-s" onclick="reset15()">Reset</button>
+               </div>
+               <div class="p-bor mar">
+                <p id="para10"></p>
+            </div>
+             </div>
+            </div>
+        </div>
+        <!--17-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">17)  Write a JavaScript program to check if a given string contains equal number of p's and t's present.    </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="j" class="text-info text-l">Enter the word : </label>
+                     <input type="text"  id="j"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="psts()">Result</button>
+                   <button class="b-s" onclick="reset16()">Reset</button>
+               
+             </div>
+            </div>
+        </div>
+    
+       
+       
+        </div>
+        <!--18-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">18) Write a JavaScript program to create a new string without the first and last character of a given string.</p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="k" class="text-info text-l">Enter the word : </label>
+                     <input type="text"  id="k"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="without_first_end()">Result</button>
+                   <button class="b-s" onclick="reset17()">Reset</button>
+               
+             </div>
+             <div class="p-bor mar">
+                <p id="para11"></p>
+            </div>
+            </div>
+        </div>
+    
+       
+       
+        </div>
+        <!--19-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s">19) Write a JavaScript program to move last three character to the start of a given string. The string length must be greater or equal to three </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="l" class="text-info text-l">Enter the word : </label>
+                     <input type="text"  id="l"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="moveltf()">Move</button>
+                   <button class="b-s" onclick="reset18()">Reset</button>
+               
+             </div>
+             <div class="p-bor mar">
+                <p id="para12"></p>
+            </div>
+            </div>
+        </div>
+    
+       
+       
+        </div>
+        <!--20-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s"> 20) Write a JavaScript program to test if a string end with "Script". The string length must be greater or equal to 6. </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="m" class="text-info text-l">Enter the word : </label>
+                     <input type="text"  id="m"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="script()">Result</button>
+                   <button class="b-s" onclick="reset19()">Reset</button>
+               
+             </div>
+             
+            </div>
+        </div>
+    
+       
+       
+        </div>
+        <!--21-->
+        <div class="row">
+            <div class="col-xs-12 ">
+               <p class="text-left  text-p-s"> 21) Write a JavaScript program to create a new string using the first and last n characters from a given sting. The string length must be greater or equal to n.  </p>
+    
+               <div class="border">
+               <div class="form-group mar">
+                     <label for="k1" class="text-info text-l">Enter the word   :</label>
+                     <input type="text"  id="k1"  value="">
+               </div>
+               <div class="form-group mar">
+                <label for="k2" class="text-info text-l">Enter the  no's : </label>
+                <input type="text"  id="k2"  value="">
+               </div>
+               <div class="form-group mar2">
+                   <button class="b-s" onclick="nposremove()">Result</button>
+                   <button class="b-s" onclick="reset20()">Reset</button>
+               
+             </div>
+             <div class="p-bor mar">
+                <p id="para13"></p>
+            </div>
+             
+            </div>
+        </div>
+    
+       
+       
+        </div>
+        <!--22-->
+        <div class="row">
+            <div class="col-xs-12 ">
+                   <p class="text-left  text-p-s">22) Write a JavaScript program to reverse the elements of a given array of integers length 3.</p>
+        
+                   <div class="border">
+                   <div class="form-group mar">
+                         <label for="n" class="text-info text-l">Enter the  values : </label>
+                         <input type="text"  id="n"  value="">
+                   </div>
+                   <div class="form-group mar3">
+                       <button class="b-s" onclick="aryreverse()">Array Reverse</button>
+                       <button class="b-s" onclick="reset21()">Reset</button>
+                   
+                 </div>
+                 <div class="p-bor mar">
+                    <p id="para14"></p>
+                </div>
+                </div>
+        </div>
+        </div>
+        <!--23-->
+        <div class="row">
+         <div class="col-xs-12 ">
+                   <p class="text-left  text-p-s">23) Write a JavaScript to find the longest string from an given array of strings </p>
+        
+                   <div class="border">
+                   <div class="form-group mar">
+                         <label for="o" class="text-info text-l">Enter the sentence  : </label>
+                         <input type="text"  id="o"  value="">
+                   </div>
+                   <div class="form-group mar3">
+                       <button class="b-s" onclick="findLongestWord()">Find</button>
+                       <button class="b-s" onclick="reset22()">Reset</button>
+                   
+                 </div>
+                 <div class="p-bor mar">
+                    <p id="para15"></p>
+                </div>
+                </div>
+        </div>
+        </div>
+        <!--24-->
+        <div class="row">
+            <div class="col-xs-12 ">
+                      <p class="text-left  text-p-s">24) Write a JavaScript to replace each character of a given string by the next one in the English alphabet. <br> 
+                        Note: 'a' will be replace by 'b' or 'z' would be replaced by 'a'.  </p>
+           
+                      <div class="border">
+                      <div class="form-group mar">
+                            <label for="p" class="text-info text-l">Enter the Word  : </label>
+                            <input type="text"  id="p"  value="">
+                      </div>
+                      <div class="form-group mar3">
+                          <button class="b-s" onclick="LetterChanges()">Change</button>
+                          <button class="b-s" onclick="reset23()">Reset</button>
+                      
+                    </div>
+                    <div class="p-bor mar">
+                       <p id="para16"></p>
+                   </div>
+                   </div>
+           </div>
+        </div>
+        <!--25-->
+        <div class="row">
+            <div class="col-xs-12 ">
+                      <p class="text-left  text-p-s">25) Write a simple JavaScript program to join all elements of the following array into a string. Go to the editor<br>
+                        Sample array : myColor = ["Red", "Green", "White", "Black"];<br>
+                        Expected Output :<br>
+                       "Red,Green,White,Black"<br>
+                       "Red,Green,White,Black"<br>
+                       "Red+Green+White+Black" </p>
+           
+                      <div class="border">
+                      <div class="form-group mar">
+                            <label for="l1" class="text-info text-l">Enter the sentence :->  </label>
+                            <input type="text"  id="l1"  value="">
+                      </div>
+                      <div class="form-group mar">
+                        <label for="l2" class="text-info text-l">Enter the Join Symbol: </label>
+                        <input type="text"  id="l2"  value="">
+                      </div>
+                      <div class="form-group mar3">
+                          <button class="b-s" onclick="join()">Result</button>
+                          <button class="b-s" onclick="reset24()">Reset</button>
+                      
+                    </div>
+                    <div class="p-bor mar">
+                       <p id="para17"></p>
+                   </div>
+                   </div>
+           </div>
+        </div>
+        <!--26-->
+        <div class="row">
+                <div class="col-xs-12 ">
+                          <p class="text-left  text-p-s">26) Write a JavaScript program to find the most frequent item of an array.<br>
+                           Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];<br>
+                           Sample Output : a ( 5 times )</p>
+                            
+                           
+                          <div class="border">
+                          <div class="form-group mar">
+                              <label for="q" class="text-info text-l">Enter the values : </label>
+                              <input type="text"  id="q"  value="">
+                          </div>
+                        
+                          <div class="form-group mar3">
+                              <button class="b-s" onclick="mfrequent()">Result</button>
+                              <button class="b-s" onclick="reset25()">Reset</button>
+                          
+                        </div>
+                        <div class="p-bor mar">
+                           <p id="para18"></p>
+                       </div>
+                       </div>
+               </div>
+        </div>
+        <!--27-->
+        <div class="row">
+                <div class="col-xs-12 ">
+                          <p class="text-left  text-p-s">27)Write a JavaScript program to compute the sum and product of an array of integers</p>
+                            
+                           
+                          <div class="border">
+                          
+                        
+                          <div class="form-group mar3">
+                              <button class="b-s" onclick="aam()">Result</button>
+                              <button class="b-s" onclick="reset26()">Reset</button>
+                          
+                        </div>
+                        <div class="p-bor mar">
+                           <p id="para19"></p>
+                       </div>
+                       </div>
+               </div>
+        </div>
+        <!--28-->
+        <div class="row">
+                <div class="col-xs-12 ">
+                          <p class="text-left  text-p-s">28) Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity)</p>
+                            
+                           
+                          <div class="border">
+                            <div class="form-group mar">
+                                <label for="r" class="text-info text-l">Enter the Values  : </label>
+                                <input type="text"  id="r"  value="">
+                        
+                          <div class="form-group mar">
+                              <button class="b-s" onclick="duplicate()">Result</button>
+                              <button class="b-s" onclick="reset27()">Reset</button>
+                          
+                        </div>
+                        <div class="p-bor mar">
+                           <p id="para20"></p>
+                       </div>
+                       </div>
+               </div>
+            </div>
+         
+        </div>
+        <!--29-->
+        <div class="row">
+                    <div class="col-xs-12 ">
+                              <p class="text-left  text-p-s">29) Write a JavaScript program to find duplicate values in a JavaScript array.</p>
+                                
+                               
+                              <div class="border">
+                                <div class="form-group mar">
+                                    <label for="s" class="text-info text-l">Enter the Values  : </label>
+                                    <input type="text"  id="s"  value="">
+                            
+                              <div class="form-group mar">
+                                  <button class="b-s" onclick="findduplicate()">Find</button>
+                                  <button class="b-s" onclick="reset28()">Reset</button>
+                              
+                            </div>
+                            <div class="p-bor mar">
+                               <p id="para21"></p>
+                           </div>
+                           </div>
+                   </div>
+                </div>
+            
+        
+          
+     
+
+        </div>
+      </div>
+      
+      <div class="container-fluid">
+        <footer><p class="text-pp text-info ">Design By Rk~Gopi <i class="fa fa-smile-o" aria-hidden="true" id="ic"></i>.</p></footer>
+       <a href="#up"><i class="fa fa-arrow-circle-o-up" aria-hidden="true" id="ico"></i></a>
+      </div>
+    </body>
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Bootstrap JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--js-->
+      <script src="js/GOPI.js"></script>
+      
+</html>
